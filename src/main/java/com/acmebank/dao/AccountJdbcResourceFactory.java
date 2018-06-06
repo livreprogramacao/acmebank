@@ -13,7 +13,7 @@ import com.caucho.inject.TransactionScoped;
 
 public class AccountJdbcResourceFactory {
 
-	@Resource(name = "jdbc/AcmeBankDB")
+	@Resource(name = "jboss/datasources/ExampleDS")
 	private DataSource dataSource;
 
 	@Produces
