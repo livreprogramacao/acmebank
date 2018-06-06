@@ -1,0 +1,7 @@
+<beans xmlns="http://caucho.com/ns/resin" xmlns:ee="urn:java:ee"
+	xmlns:text="urn:java:java.text">
+	<text:DecimalFormat>
+		<new>$0.00</new>
+		<ee:Named>money</ee:Named>
+	</text:DecimalFormat>
+</beans>

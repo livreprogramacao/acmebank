@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Account Details</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h1>Account Details</h1>
+            <h:panelGrid columns="2">
+                <h:outputLabel for="number">Number:</h:outputLabel>
+                <h:outputText id="number" value="#{currentAccount.number}"/>
+                <h:outputLabel for="firstName">First name:</h:outputLabel>
+                <h:outputText id="firstName" value="#{currentUser.firstName}"/>
+                <h:outputLabel for="lastName">Last name:</h:outputLabel>
+                <h:outputText id="lastName" value="#{currentUser.lastName}"/>
+                <h:outputLabel for="balance">Balance:</h:outputLabel>
+                <h:outputText id="balance" value="#{currentAccount.balance}"/>
+            </h:panelGrid>
+            <h:commandButton value="Transfer" action="enter_from_bank.jsf"/>
+        </h:form>
+    </h:body>
+</html>

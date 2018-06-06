@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Transfer</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h1>Tranfer Amount</h1>
+            <h:panelGrid columns="2">
+                <h:outputLabel for="fromBank">From Bank:</h:outputLabel>
+                <h:outputText id="fromBank" value="#{transfer.fromBank}"/>
+                <h:outputLabel for="fromAccount">From Account:</h:outputLabel>
+                <h:outputText id="fromAccount" value="#{transfer.fromAccount}"/>
+                <h:outputLabel for="toBank">To Bank:</h:outputLabel>
+                <h:outputText id="toBank" value="#{transfer.toBank}"/>
+                <h:outputLabel for="toAccount">To Account:</h:outputLabel>
+                <h:outputText id="toAccount" value="#{transfer.toAccount}"/>
+                <h:outputLabel for="amount">Amount:</h:outputLabel>
+                <h:inputText id="amount" value="#{transfer.amount}"/>
+            </h:panelGrid>
+            <h:commandButton value="Finish" action="#{transfer.transfer}"/>
+        </h:form>
+    </h:body>
+</html>

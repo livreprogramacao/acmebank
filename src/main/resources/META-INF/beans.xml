@@ -1,0 +1,12 @@
+<beans xmlns="http://java.sun.com/xml/ns/javaee">
+	<interceptors>
+		<class>com.acmebank.common.AuditInterceptor
+		</class>
+		<class>com.acmebank.common.ProfilingInterceptor
+		</class>
+	</interceptors>
+	<decorators>
+		<class>com.acmebank.service.AccountServiceDecorator
+		</class>
+	</decorators>
+</beans>

@@ -1,0 +1,13 @@
+<beans xmlns="http://caucho.com/ns/resin">
+	<database>
+		<jndi-name>jdbc/AcmeBankDB</jndi-name>
+		<driver>
+			<type>org.hsqldb.jdbcDriver
+			</type>
+			<url>jdbc:hsqldb:mem:acmebank
+			</url>
+			<user>sa</user>
+			<password></password>
+		</driver>
+	</database>
+</beans>

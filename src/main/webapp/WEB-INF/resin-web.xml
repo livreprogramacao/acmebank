@@ -1,0 +1,13 @@
+<web-app xmlns="http://caucho.com/ns/resin">
+	<database>
+		<jndi-name>jdbc/AcmeBankDB</jndi-name>
+		<driver>
+			<type>com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource
+			</type>
+			<url>jdbc:mysql://localhost:3306/acmebank
+			</url>
+			<user>root</user>
+			<password>gemini6</password>
+		</driver>
+	</database>
+</web-app>
